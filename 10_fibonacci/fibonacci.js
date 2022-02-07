@@ -1,7 +1,6 @@
 const fibonacci = function(num) {
-  if (Math.sign(num) === -1) {return "OOPS"};
-  num = Number(num);
-  //if (typeof(num) === string) {}
+  if (Math.sign(num) === -1) {return "OOPS"}; // filter out -s
+  num = Number(num); // filter strings
   const fibArr = [1, 1];
   for (let i = 1; i < num - 1; i++) {
     let val1 = fibArr[fibArr.length - 1];
